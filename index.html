@@ -1,1 +1,188 @@
-<h1>Hello World Wide Web!</h1>
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="UTF-8">
+    <title>Exercise 6: Banh Mi, menus, and layout</title>
+
+ <!-- These are the embed codes for the two google fonts in our document, we will learn about google fonts next week -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Ledger&display=swap" rel="stylesheet">
+
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+
+      body {
+      font-family: serif;
+      font-weight: 600;
+      font-style: normal;
+      background-color: yellow;
+      color: gray;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 20px 20px 30px;
+
+      }
+
+      h1 , h2 , ul {
+      font-family: sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      }
+
+      h1 {
+      font-weight: 600;
+      text-align: center;
+      font-size: 32px;
+      margin: 0 0 10px;
+      color: black;
+      }
+
+      h2 {
+      font-weight: 500;
+      text-align: center;
+      font-size: 15px;
+      margin: 12px 0 6px;
+      }
+
+      ul {
+      font-weight: 700;
+      list-style: none;
+      margin: 0 0 25px;
+      padding: 0;
+      text-align: center;
+      }
+
+      ul li{
+        display: inline-block;
+      }
+
+      ul li a{
+      display: block; 
+      padding: 4px 8px;
+      font-size: 15px;
+      text-decoration: none;
+      }
+
+      ul li a:hover{
+        background-color: black;
+          color: white;
+      }
+
+      .intro{
+      max-width: 640px;
+      margin: 0 auto 20px;
+      font-size: 23px;
+      line-height: 1.5;
+      }
+
+      .menu{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 8px;
+      }
+
+      .card {
+      min-width: 0;
+      background-color: orange;
+      border: 2px solid orange;
+      padding-bottom: 12px;
+      margin: 0;
+      }
+
+
+      .card:hover {
+      border-color: black;
+      background-color: purple;
+      }
+
+      .card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      }
+
+      .card p {
+      margin: 0;
+      padding: 0 15px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.45;
+      color: brown;
+      }
+
+      footer {
+      width: 80%;
+      margin: 12px auto 0;
+      padding: 8px 12px;
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-size: 14px;
+      }
+
+      footer p {
+      margin: 0;
+      }
+
+      @media (max-width: 520px) {
+        .menu { grid-template-columns: auto; }
+        footer { width: 100%; }
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>Greg’s Banh Mi</h1>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <h1 class="intro">At Greg’s Banh Mi, we’re serving up the perfect marriage of French and Vietnamese culinary traditions&mdash;crispy-on-the-outside, pillowy-on-the-inside baguettes loaded with bold, fresh flavours that'll make your taste buds sing.</h1>
+
+    <div class="menu">
+
+      <div class="card">
+        <img src="banh-mi.jpg" alt="Classic Pork Banh Mi">
+        <h2>Classic Pork Banh Mi</h2>
+        <p>Tender marinated pork topped with crisp pickled vegetables, fresh cilantro, and a smear of p&acirc;t&eacute; on a perfectly crusty baguette. A traditional favorite that balances savory, sweet, and tangy flavors in every bite.</p>
+      </div>
+
+      <div class="card">
+        <img src="banh-mi.jpg" alt="Classic Pork Banh Mi">
+        <h2>Lemongrass Chicken Banh Mi</h2>
+        <p>Grilled chicken marinated in fragrant lemongrass and garlic, paired with cucumber, jalape&ntilde;os, and our house mayo. Light yet satisfying, this sandwich brings bright, aromatic flavors that'll transport you straight to Saigon.</p>
+      </div>
+
+      <div class="card">
+        <img src="banh-mi.jpg" alt="Classic Pork Banh Mi">
+        <h2>Tofu Banh Mi</h2>
+        <p>Crispy pan-fried tofu glazed in sweet soy sauce, layered with daikon, carrots, and fresh herbs for a vegetarian delight. Proof that plant-based can be just as bold and craveable as any meat-filled sandwich.</p>
+      </div>
+
+      <div class="card">
+        <img src="banh-mi.jpg" alt="Classic Pork Banh Mi">
+        <h2>Five-Spice Beef Banh Mi</h2>
+        <p>Thinly sliced beef seared with aromatic five-spice blend and served with pickled vegetables and spicy Sriracha mayo. Rich, warming spices meet cool, crunchy toppings for an unforgettable flavor experience.</p>
+      </div>
+
+    </div>
+
+    <footer>
+      <p>Because life’s too short for boring sandwiches. Greg’s got you covered&mdash;one crispy baguette at a time.</p>
+    </footer>
+
+  </body>
+</html>
